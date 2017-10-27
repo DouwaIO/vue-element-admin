@@ -39,8 +39,8 @@ export const constantRouterMap = [
 ]
 
 export default new Router({
-  // mode: 'history', //后端支持可开
-  scrollBehavior: () => ({ y: 0 }),
+  // mode: 'history', //后端支持可开 配置路由模式 "hash" | "history" | "abstract" 默认值: "hash" (浏览器环境) | "abstract" (Node.js 环境) https://router.vuejs.org/zh-cn/api/options.html#routes
+  scrollBehavior: () => ({ y: 0 }), // 滚动行为 https://router.vuejs.org/zh-cn/api/options.html#scrollbehavior
   routes: constantRouterMap
 })
 

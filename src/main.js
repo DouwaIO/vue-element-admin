@@ -14,10 +14,10 @@ Vue.use(ElementUI)
 
 // register global utility filters.
 Object.keys(filters).forEach(key => {
-  Vue.filter(key, filters[key])
+  Vue.filter(key, filters[key]) // 注册或获取全局过滤器。
 })
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false // 设置为 false 以阻止 vue 在启动时生成生产提示.
 
 new Vue({
   el: '#app',
